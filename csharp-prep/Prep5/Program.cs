@@ -9,7 +9,9 @@ class Program
        string userName = PromptName();
        int userNumber = PromptNumber();
 
-       DisplayResult(userName, userNumber);
+       int squaredNumber = SquaredNumber(userNumber);
+
+       DisplayResult(userName, squaredNumber);
     }
 
     static void DisplayWelcome()
@@ -33,8 +35,14 @@ class Program
         return number;
     }
 
-    static void DisplayResult(string name, int number)
+    static int SquaredNumber(int number)
     {
-        Console.WriteLine($"{name}, ")
+        int squared = number * number;
+        return squared;
+    }
+
+    static void DisplayResult(string name, int squared)
+    {
+        Console.WriteLine($"{name}, the square of your number is {squared}");
     }
 }
