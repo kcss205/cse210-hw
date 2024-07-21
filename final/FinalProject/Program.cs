@@ -1,9 +1,10 @@
 using System;
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello FinalProject World!");
+        static void Main(string[] args)
+        {
+            Menu menu = new Menu();
+            menu.ShowMenu();
+        }
     }
-}
