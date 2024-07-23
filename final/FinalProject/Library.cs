@@ -1,6 +1,8 @@
 using System;
 
-public class Library
+namespace BookTracker
+{
+    public class Library
     {
         public List<Book> Books { get; set; }
 
@@ -21,4 +23,27 @@ public class Library
                 Console.WriteLine(book);
             }
         }
+
+        public void ListBooksInProgress()
+        {
+            foreach (var book in Books)
+            {
+                if (!book.IsDone)
+                {
+                    Console.WriteLine(book);
+                }
+            }
+        }
+
+        public void ListDoneBooks()
+        {
+            foreach (var book in Books)
+            {
+                if (book.IsDone)
+                {
+                    Console.WriteLine(book);
+                }
+            }
+        }
     }
+}

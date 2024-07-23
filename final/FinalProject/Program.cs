@@ -1,10 +1,10 @@
 using System;
 
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Menu menu = new Menu();
-            menu.ShowMenu();
-        }
+        var menu = new BookTracker.Menu();
+        menu.ShowMenu();
     }
+}

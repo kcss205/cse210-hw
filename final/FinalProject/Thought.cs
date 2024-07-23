@@ -1,5 +1,6 @@
 using System;
-  public class Thought
+
+ public class Thought
     {
         public string Content { get; set; }
 

@@ -1,5 +1,6 @@
 using System;
-public class Progress
+
+    public class Progress
     {
         public int PagesRead { get; set; }
         public int TotalPages { get; set; }
